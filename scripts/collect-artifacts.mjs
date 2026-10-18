@@ -78,7 +78,7 @@ if (existsSync(exe)) {
   const dst = join(outDir, `${base}-portable.zip`);
   rmSync(dst, { force: true });
   if (process.platform === 'win32') {
-    execFileSync('tar', ['-a', '-c', '-f', dst, '-C', staging, productName]);
+    execFileSync('powershell', ['-NoProfile', '-Command', `Compress-Archive -Path "${join(staging, productName)}" -DestinationPath "${dst}" -Force`]);
   } else {
     execFileSync('zip', ['-r', '-q', dst, productName], { cwd: staging });
   }
