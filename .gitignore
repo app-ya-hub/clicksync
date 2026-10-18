@@ -1,0 +1,44 @@
+# ─── Node ─────────────────────────────────────────────────────────────────────
+node_modules/
+dist/
+.vite/
+
+# ─── Rust / Cargo ─────────────────────────────────────────────────────────────
+src-tauri/target/
+src-tauri/gen/
+
+# ─── Tauri ────────────────────────────────────────────────────────────────────
+# Local settings store (contains API keys — NEVER commit)
+*.settings.json
+clicksync.settings.json
+
+# ─── OS ───────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+
+# ─── IDE ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.iml
+
+# ─── Thumbnails / cache ────────────────────────────────────────────────────────
+thumbnail_cache/
+
+# ─── Build outputs ────────────────────────────────────────────────────────────
+*.exe
+*.dmg
+*.deb
+*.rpm
+*.AppImage
+*.msi
+release/
+
+# ─── Secrets (never commit!) ──────────────────────────────────────────────────
+.env
+.env.local
+*.pem
+*.p12
+*.key

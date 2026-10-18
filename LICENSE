@@ -1,0 +1,25 @@
+Copyright (c) 2026 ClickSync. All rights reserved.
+
+本ソフトウェア（ソースコード、実行ファイル、アイコン・画像・文書等の付属物を含む）の
+著作権その他一切の知的財産権は権利者に帰属します。
+
+権利者の書面による許可なく、本ソフトウェアの全部または一部を複製、改変、翻案、
+再配布、販売、貸与、公衆送信、またはリバースエンジニアリングすることを禁じます
+（法令により認められる範囲を除きます）。
+
+本ソフトウェアの使用は、別途定める利用規約（エンドユーザー使用許諾契約）に従うものとします。
+
+本ソフトウェアに含まれるオープンソースソフトウェアは、それぞれのライセンスに従います。
+一覧はアプリの「設定 → オープンソースライセンス」、または
+src-tauri/resources/THIRD_PARTY_LICENSES.txt を参照してください。
+
+--------------------------------------------------------------------------------
+
+This software, including its source code, binaries, and accompanying materials,
+is proprietary and confidential. No part of it may be copied, modified,
+distributed, sold, sublicensed, or reverse engineered without the prior written
+permission of the copyright holder, except as permitted by applicable law.
+Use of this software is governed by the End User License Agreement.
+
+Third-party open source components are licensed under their respective
+licenses; see src-tauri/resources/THIRD_PARTY_LICENSES.txt.

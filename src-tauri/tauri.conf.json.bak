@@ -1,0 +1,65 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "ClickSync",
+  "version": "0.1.0",
+  "identifier": "com.clicksync.app",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:1420",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "ClickSync",
+        "width": 1280,
+        "height": 820,
+        "minWidth": 1024,
+        "minHeight": 700,
+        "resizable": true,
+        "fullscreen": false,
+        "decorations": true,
+        "center": true,
+        "titleBarStyle": "Overlay"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; connect-src 'self' https://www.youtube.com https://generativelanguage.googleapis.com https://fonts.googleapis.com; img-src 'self' https://i.ytimg.com https://yt3.ggpht.com data: blob: asset:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self' https://fonts.gstatic.com"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "nsis": {
+        "installMode": "perUser",
+        "languages": ["Japanese"],
+        "displayLanguageSelector": false
+      },
+      "wix": null
+    },
+    "macOS": {
+      "minimumSystemVersion": "10.15",
+      "entitlements": "entitlements.plist",
+      "exceptionDomain": "",
+      "signingIdentity": null,
+      "providerShortName": null
+    },
+    "resources": [
+      "assets/**/*"
+    ],
+    "copyright": "© 2025 ClickSync",
+    "category": "Productivity",
+    "shortDescription": "YouTube A/Bテスト アセット自動生成ツール",
+    "longDescription": "YouTubeクリエイター向けの、サムネイル・タイトル・概要欄を感情3軸で一括生成するネイティブデスクトップアプリ"
+  }
+}

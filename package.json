@@ -1,0 +1,38 @@
+{
+  "name": "clicksync",
+  "private": true,
+  "license": "UNLICENSED",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "version:set": "node scripts/set-version.mjs",
+    "licenses": "node scripts/generate-third-party-licenses.mjs",
+    "dist:linux": "bash scripts/build-linux.sh",
+    "dist:mac": "bash scripts/build-macos.sh",
+    "dist:win-cross": "bash scripts/build-windows-cross.sh"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.0.0",
+    "@tauri-apps/plugin-shell": "^2.0.0",
+    "@tauri-apps/plugin-store": "^2.0.0",
+    "nanoid": "^5.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8"
+  }
+}
